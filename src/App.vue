@@ -48,7 +48,7 @@ export default {
       if (confirm("Are you sure you want to clear all transactions?")) {
         try {
           await axios.delete(
-            `${process.env.VUE_APP_API_BASE_URL}/delete_all.php`
+            "http://localhost/finance-tracker/finance-backend/api/transactions/delete_all.php"
           );
           alert("✅ All transactions cleared!");
           location.reload(); // Or emit an event to refresh only
