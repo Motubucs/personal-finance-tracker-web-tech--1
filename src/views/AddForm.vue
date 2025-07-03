@@ -210,8 +210,6 @@ export default {
             existingTransactions.unshift(newTransaction);
             localStorage.setItem('transactions', JSON.stringify(existingTransactions));
             
-            alert("⚠️ Transaction saved locally only!\n\n� Network error: Could not save to shared database.\nThis transaction is only visible on your device.");
-            
             // Reset form
             this.form = {
               type: "",
